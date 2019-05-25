@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <a href="index.html"><title>今日のご飯は？</title></a>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <a href="index.html"><img class="logo" src="./tf-logo.png" alt="tf-logo"></a>
+          <div class="header-list">
+            <a href="about.html" class="about">ABOUT</a>
+            <a href="contact.html" class="contact">お問い合わせ</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="main">
+                <div id="slot">
+                    <p id="isFood">今日のご飯は？</p>
+                </div>
+                <div class="buttons">
+                    <button id="start" onClick="clickedStart()">start</button>
+                    <button id="stop" onClick="clickedStop()">stop</button>
+                </div>
+            </div>
+
+    <footer>
+      <small>(c)niwa.miki All Rights Reserved.</small>
+    </footer>
+    <script src="food-slot.js"></script>
+  </body>
+</html>

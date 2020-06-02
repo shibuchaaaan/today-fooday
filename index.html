@@ -3,10 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>今日のご飯は何にする？ today-fooday</title>
-    <link rel="stylesheet" href="stylesheet.css">
     <link rel="icon" href="tf-logo.png">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
   </head>
+
   <body>
     <header>
       <div class="container">
@@ -19,21 +28,43 @@
         </div>
       </div>
     </header>
+
     <div class="top-wrapper">
-      <div class="container">
-        <a href="index.html"><h1>今日のご飯は？</h1></a>
-        <p>today-foodayが今日のご飯を決めてくれます。</p>
+      <div class="container-fluid padding wf-roundedmplus1c">
+
+        <div class="row welcome text-center">
+          <div class="col-12">
+            <a href="index.html"><h1>今日のご飯は？</h1></a>
+            <button type="button" id="food-slot" class="btn btn-outline-primary"><a href="food-slot.html">ご飯を決めましょう！</a></button>
+          </div>
+          <div class="col-12">
+              <p class="lead">
+                today-foodayが今日のご飯を決めてくれます
+              </p>
+          </div>
+        </div>
+
         <div class="btn-wrapper">
-          <a href="food-slot.html" class="btn food-slot">ご飯を決めましょう！</a>
           <p>いいね！と思ったら拡散していただけると喜びます＾＾</p>
-         <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fwww.shibuchaaaan.html.xdomain.jp&layout=box_count&size=small&mobile_iframe=true&width=61&height=40&appId" width="61" height="40" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fwww.shibuchaaaan.html.xdomain.jp&layout=box_count&size=small&mobile_iframe=true&width=61&height=40&appId" width="61" height="40" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
           <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
+
       </div>
     </div>
 
     <footer>
       <small>(c)niwa.miki All Rights Reserved.</small>
     </footer>
+
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    
+     <!-- Add Firebase products that you want to use -->
+     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+ 
+     <script src="js/main.js"></script>
   </body>
 </html>

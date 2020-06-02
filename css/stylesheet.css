@@ -1,46 +1,49 @@
-/*index*/
-header{
-  height:46px;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+/* PC(large screen) first CSS. */
+
+html, body {
+  height: 100%;
   width: 100%;
-  background-color: white;
-}
-.logo{
-  float: left;
-  width: 55px;
-  height:45px;
-  margin-top: 1px;
-}
-.header-list{
-  float:right;
-  padding:13px;
-  margin-right:5px;
-  font-family: "Hiragino Kaku Gothic ProN";
-  font-size: 14px;
-}
-.about{
-  color:orange;
-  opacity: 0.8;
-  padding-right: 5px;
-}
-.contact{
-  color:orange;
-  opacity: 0.8;
-  padding-right: 5px;
+  font-family: 'Yu Gothic', 'Poppins', sans-serif;
+  color: #222;
+  background-color: #eceef0;
 }
 
-body {
-  margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
-}
+/* googleフォント */
+.wf-roundedmplus1c { font-family: "M PLUS Rounded 1c"; }
 
+/* 共通 */
+.hidden {
+  display: none;
+}
+.padding {
+  padding-bottom: 2rem;
+}
+li {
+    line-height: 2;
+    list-style-type: none;
+}
+input[type="text"] {
+    padding: 6px 8px;
+    width: 300px;
+}
 a {
   text-decoration: none;
 }
 
-.container {
-  width: 100%;
-  padding: 0 15px;
+/* welcome */
+
+.welcome {
+  width: 75%;
   margin: 0 auto;
+  padding-top: 2rem;
+}
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
 }
 
 .top-wrapper {
@@ -62,11 +65,45 @@ a {
   color: #FF6E00;
 }
 
+.header-list{
+  float:right;
+  padding:13px;
+  margin-right:5px;
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 14px;
+}
+.about{
+  color:orange;
+  opacity: 0.8;
+  padding-right: 5px;
+}
+.contact{
+  color:orange;
+  opacity: 0.8;
+  padding-right: 5px;
+}
+
+/*---Media Queries --*/
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 200%;
+  }  
+}
+@media (max-width: 576px) {
+  .display-4 {
+    font-size: 160%;
+  }
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
 .btn {
   padding: 8px 24px;
   color: white;
   display: inline-block;
-
   border-radius: 4px;
 }
 .btn-wrapper{
@@ -86,8 +123,8 @@ a {
 }
 
 .twitter-share-button{
-  width:100;
-  height:55;
+  width:100%;
+  height:55%;
   padding-left: 10px;
 }
 
@@ -111,7 +148,7 @@ a {
   width: 100%;
   overflow: hidden;
   margin: 0px auto 100px;
-  padding: 150px auto;
+  padding: 150px;
   line-height: normal;
   font-family: "Hiragino Kaku Gothic ProN";
 }

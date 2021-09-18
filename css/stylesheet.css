@@ -1,70 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-
-/* PC(large screen) first CSS. */
-
-html, body {
-  height: 100%;
+/*index*/
+header{
+  height:46px;
   width: 100%;
-  font-family: 'Yu Gothic', 'Poppins', sans-serif;
-  color: #222;
-  background-color: #eceef0;
+  background-color: white;
 }
-
-/* googleフォント */
-.wf-roundedmplus1c { font-family: "M PLUS Rounded 1c"; }
-
-/* 共通 */
-.hidden {
-  display: none;
+.logo{
+  float: left;
+  width: 55px;
+  height:45px;
+  margin-top: 1px;
 }
-.padding {
-  padding-bottom: 2rem;
-}
-li {
-    line-height: 2;
-    list-style-type: none;
-}
-input[type="text"] {
-    padding: 6px 8px;
-    width: 300px;
-}
-a {
-  text-decoration: none;
-}
-
-/* welcome */
-
-.welcome {
-  width: 75%;
-  margin: 0 auto;
-  padding-top: 2rem;
-}
-.welcome hr {
-  border-top: 2px solid #b4b4b4;
-  width: 95%;
-  margin-top: .3rem;
-  margin-bottom: 1rem;
-}
-
-.top-wrapper {
-  padding: 180px 0 180px 0;
-  background-image:url("./foodpic//katsu-1.jpg");
-  background-size: cover;
-  color:white;
-  opacity: 0.8;
-}
-
-.top-wrapper h1 {
-  color:white;
-  font-size: 40px;
-  letter-spacing: 5px;
-}
-
-.top-wrapper p {
-  font-size: 20px;
-  color: #FF6E00;
-}
-
 .header-list{
   float:right;
   padding:13px;
@@ -73,67 +18,68 @@ a {
   font-size: 14px;
 }
 .about{
-  color:orange;
+  color:rgb(255, 153, 0);
   opacity: 0.8;
   padding-right: 5px;
 }
 .contact{
-  color:orange;
+  color:rgb(255, 153, 0);
   opacity: 0.8;
   padding-right: 5px;
 }
 
-/*---Media Queries --*/
-@media (max-width: 768px) {
-  .display-4 {
-    font-size: 200%;
-  }  
-}
-@media (max-width: 576px) {
-  .display-4 {
-    font-size: 160%;
-  }
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
 }
 
-/*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
-    padding: 1rem;
+a {
+  text-decoration: none;
 }
 
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  border-radius: 4px;
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
+
+.top-wrapper {
+  padding: 180px 0 180px 0;
+  background-image:url("../foodpic/katsu-1.jpg");
+  background-size: cover;
+  color:white;
+  opacity: 0.85;
+}
+
+.top-wrapper h1 {
+  color:#ffffff;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+.top-wrapper p {
+  font-size: 20px;
+  color: #ffffff;
+}
+
 .btn-wrapper{
   margin: 20px 0;
 }
 .btn-wrapper p{
   margin:10px 0;
-  color:#FF6E00;
+  color:#ffffff;
 }
 .btn:hover{
   opacity:1;
 }
-.food-slot{
-  background-color:#FF6E00;
-  font-size: 20px;
-  opacity: 0.9;
+#food-slot a {
+  color: #ffffff;
 }
 
-.twitter-share-button{
-  width:100%;
-  height:55%;
+iframe .twitter-share-button{
+  width: unset!;
+  height:55;
   padding-left: 10px;
-}
-
-.btn-wrapper {
-  margin: 20px 0;
-}
-
-.btn-wrapper p {
-  margin: 10px 0;
 }
 
 .footer-list{
@@ -148,7 +94,7 @@ a {
   width: 100%;
   overflow: hidden;
   margin: 0px auto 100px;
-  padding: 150px;
+  padding: 150px auto;
   line-height: normal;
   font-family: "Hiragino Kaku Gothic ProN";
 }
@@ -209,24 +155,18 @@ a {
 ul{
   list-style: none;
 }
-li{
+.sns-list li {
   display: inline-block;
-  background-color: orange;
-  opacity: 50%;
-  width: 10%;
-  color: white;
-  border-radius: 15%;
+  padding: 5px;
 }
-.twitter:hover{
-    opacity:0.7;
-  }
-.insta:hover{
-    opacity:0.7;
-  }
-.facebook:hover{
-    opacity:0.7;
-  }
-.blog:hover{
+.twitter a, .insta a {
+  display: inline-block;
+  background-color: rgb(255, 153, 0);
+  padding: 5px 10px;
+  border-radius: 5%;
+  color: #ffffff;
+}
+.twitter:hover, .insta:hover {
     opacity:0.7;
   }
 
